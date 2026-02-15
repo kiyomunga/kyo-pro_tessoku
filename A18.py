@@ -15,7 +15,7 @@ for i in range(1,N+1):
                 dp[i][j]=False
         if j>=A[i-1]:
             if dp[i-1][j]==True or dp[i-1][j-A[i-1]]==True:
-                dp=[i][j]=True
+                dp[i][j]=True
             else:
                 dp[i][j]=False
 
